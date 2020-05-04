@@ -1,0 +1,56 @@
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="367dp"
+        android:layout_height="81dp"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textDirection="firstStrongRtl"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        tools:text="Bienvenido a" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="499dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="599dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chatza" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="160dp"
+        android:text="Soy Cliente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="160dp"
+        android:text="Soy Chacero"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
