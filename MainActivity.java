@@ -1,4 +1,4 @@
-package com.example.chatzalogin1;
+package com.example.chatzalogin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

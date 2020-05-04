@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Título"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
@@ -9,83 +10,58 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="235dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="100dp"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="367dp"
+        android:layout_height="81dp"
         android:fontFamily="@font/roboto"
-        android:text="Correo electrónico:"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textDirection="firstStrongRtl"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
         android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        tools:text="Bienvenido a" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="235dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="48dp"
-        android:fontFamily="@font/roboto"
-        android:text="Contraseña:"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:layout_editor_absoluteX="38dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="317dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="499dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="599dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="317dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chatza" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="152dp"
-        android:fontFamily="@font/roboto"
-        android:text="Ingresar"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="160dp"
+        android:text="Soy Cliente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="136dp"
-        android:fontFamily="@font/roboto"
-        android:text="Registrarse"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="160dp"
+        android:text="Soy Chacero"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </android.support.constraint.ConstraintLayout>
