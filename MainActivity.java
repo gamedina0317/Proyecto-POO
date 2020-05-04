@@ -1,4 +1,4 @@
-package com.interfaz.poo;
+package com.interfaz.poo2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
